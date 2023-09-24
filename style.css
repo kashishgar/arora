@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+    background-size: cover;
+    background-image: url("https://img.pikbest.com/backgrounds/20220119/anniversary-light-black-business-anniversary-background-poster_6234260.jpg!sw800");
+}
+.logo img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left: 250px;
+    margin-bottom: 160px;
+    margin-top: -280px;
+    margin-right: -700px;
+    
+}
+#time{
+display: flex;
+gap: 30px;
+}
+
+#time .circle{
+position: relative;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#time .circle svg{
+    position: relative;
+    width: 150px;
+height: 150px;
+transform: rotate(270deg);
+}
+#time .circle svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #282828;
+    transform: translate(5px,5px);
+}
+#time .circle svg circle:nth-child(2)
+{
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 3rem;
+
+}
+#time div span{
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.25em;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+   
+}
+#time .dots{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+#time .dots::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    height: 15px;
+    width: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),0 0 60px var(--clr);
+    
+}
+
+.anniversary{
+    margin-top: 25px;
+    margin-bottom: -180px;
+    color: #FFD700;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+}
